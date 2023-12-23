@@ -10,13 +10,14 @@ import { Component,Input } from '@angular/core';
  </p>
   `,
   styles: `
- button{
-    background-size: 200px;
+button {
+  width: 200px;
+  height: 200px;
+  font-size: 150px; /* Adjust font size as needed */
+  background-color: none;
 }
 `
 })
-//this component can't modify it's own state it all comes from
-//the parent so it's called a UI component or a DUMB component
 export class SquareComponent{
   @Input() value! : 'X' | 'O';
 }

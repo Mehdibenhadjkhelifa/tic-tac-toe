@@ -1,13 +1,13 @@
-main{
-    display:grid;
-    grid-template-columns: 200px 200px 200px;
-    grid-gap: 0px;
-}
-
-app-square{
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); // Use repeat for flexible grid columns
+    grid-gap: 0;
+    width: 600px; // Set a width for the grid, adjust as needed
+  }
+  app-square {
     border: 1px gray solid;
-    height : 200px;
-}
-button{
-    background-size: 200px;
-}
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
